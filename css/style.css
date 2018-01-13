@@ -1,0 +1,39 @@
+/* --------------------- general ------------------- */
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/gilroylight.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/gilroyextrabold.woff);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/opensans.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/opensanslight.woff);
+    font-weight: 300;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+}
+
+/* --------------------- index.html ------------------- */
+
+
+
+
+
+
+/* --------------------- catalog.html ------------------- */
