@@ -198,12 +198,36 @@ header a {
     color: #666666;
 }
 
-.top-nav .nav-right a:hover {
+.top-nav a:hover {
     color: rgba(0,0,0, 0.6);
 }
 
-.top-nav .nav-right a:focus {
+.top-nav a:focus {
     color: rgba(0,0,0, 0.3)
+}
+
+.top-nav a:hover::before {
+    opacity: 0.6;
+}
+
+.top-nav a:focus::before {
+    opacity: 0.3;
+}
+
+.bottom-nav a:hover {
+    color: rgba(0,0,0, 0.6);
+}
+
+.bottom-nav a:focus {
+    color: rgba(0,0,0, 0.3);
+}
+
+.bottom-nav a:hover::after {
+    opacity: 0.6;
+}
+
+.bottom-nav a:focus::after {
+    opacity: 0.3;
 }
 
 
