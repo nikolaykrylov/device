@@ -77,36 +77,56 @@ header a {
     width: 502px;
 }
 
-.search-form {
-    float: left;
-}
-
-.search-form::before {
-    position: absolute;
-    left: 64px;
-    top: 52px;
-    content: '';
-    width: 26px;
-    height: 26px;
-    background-image: url("../img/spritesheet.png");
-    background-position: -20px -287px;
-}
-
-.search-form button {
-    display: none;
-}
-
-.search-form input {
-    background-color: #f7e296;
-    border: none;
-}
-
-.search-form input::placeholder {
-    color: rgba(0, 0, 0, 0.3);
+.top-nav {
+    margin-bottom: 25px;
 }
 
 .top-nav .nav-left {
     margin-left: 44px;
+    height: 40px;
+}
+
+.search-form {
+    float: left;
+    margin-left: -35px;
+    width: 400px;
+    background-color: #f7e296;
+    border: none;
+    padding-bottom: 14px;
+    background-repeat: no-repeat;
+}
+
+.search-form button {
+    position: absolute;
+    top: 34px;
+    left: 400px;
+    background-color: #f7e296;
+    border: 2px solid black;
+    padding: 15px 20px;
+    display: none;
+}
+
+
+.search-form input {
+    background-color: #f7e296;
+    border: none;
+    width: 353px;
+    padding-left: 35px;
+}
+
+.search-form label {
+    position: absolute;
+    left: 62px;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-image: url("../img/spritesheet.png");
+    background-position: -20px -287px;
+    cursor: pointer;
+}
+
+.search-form input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .top-nav .nav-right a {
@@ -155,7 +175,6 @@ header a {
 }
 
 .bottom-nav {
-    margin-top: 46px;
     font-family: "Gilroy", Verdana, sans-serif;
     font-size: 18px;
     letter-spacing: 0.2em;
@@ -190,6 +209,9 @@ header a {
 /* ------------  hover and
                  focus states
  */
+
+
+
 .device-logo-header:hover {
     color: #464646;
 }
@@ -230,6 +252,40 @@ header a {
     opacity: 0.3;
 }
 
+
+.search-form input:hover::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+.search-form input:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+}
+
+.search-form input:focus + button {
+    display: block;
+}
+
+.search-form input:focus + button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+.search-form input:focus + button:focus {
+    background-color: black;
+    color: rgba(255,255,255, 0.3);
+    display: block;
+}
+
+.search-form button:hover {
+    display: inline-block;
+    background-color: black;
+    color: rgba(255,255,255, 0.3);
+}
 
 /* --------------------- index.html ------------------- */
 
