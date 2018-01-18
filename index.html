@@ -28,7 +28,7 @@
             <div class="bottom-nav">
                 <nav class="nav-left">
                     <input class="dropdown-checkbox" type="checkbox" id="dropdown-toggle">
-                    <label for="dropdown-toggle"><a class="dropdown-link">Каталог товаров</a></label>
+                    <label for="dropdown-toggle" class="dropdown-link">Каталог товаров</label>
                     <nav class="dropdown-menu">
                         <ul>
                             <li><a href="#">Виртуальная реальность</a></li>
@@ -55,14 +55,21 @@
 
         </div>
         <section class="slider">
-            <img class="slider-image" width="#" height="" src="#">
-            <div class="slider-description">
-                <h2>Делай селфи, как Бен Стиллер!</h2>
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <input type="radio" id="btn-3" name="toggle">
+            <div class="slider-controls">
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+                <label for="btn-3"></label>
+            </div>
+            <div class="slide">
+                <b class="slide-number">01</b>
+                <h2>Делай селфи, <br>
+                как Бен Стиллер!</h2>
                 <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
-                    Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                </p>
+                    Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                 <a class="button">Подробнее</a>
-                <div class="slider-buttons"></div>
                 <div class="item-specification">
                     <div class="item-description-1">
                         <p>8,5 м</p>
@@ -80,6 +87,42 @@
                     </div>
                 </div>
             </div>
+            <div class="slide">
+                <b class="slide-number">02</b>
+                <h2>Худеем <br>
+                правильно!</h2>
+                <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы<br>
+                    не пропускать занятия и соблюдать диету.</p>
+                <a class="button">Подробнее</a>
+                <div class="item-specification">
+                    <div class="item-description-1">
+                        <p>48 часов</p>
+                        <sub>Без подзарядки</sub>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <b class="slide-number">03</b>
+                <h2>Порхает как бабочка, <br>
+                    жалит как пчела!</h2>
+                <p>Этот обычный, на первый взгляд, квадрокоптер оснаще<br>
+                    мощным лазером, замаскированным под стандартную камеру.
+                </p>
+                <a class="button">Подробнее</a>
+                <div class="item-specification">
+                    <div class="item-description-1">
+                        <p>800 м</p>
+                        <sub>Дальность полета</sub>
+                    </div>
+
+                    <div class="item-description-2">
+                        <p>50 м</p>
+                        <sub>Радиус поражения</sub>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
     </div>
 </header>

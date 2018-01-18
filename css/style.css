@@ -207,7 +207,7 @@ header a {
     display: none;
 
     background-color: #f7e296;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .dropdown-checkbox {
@@ -287,13 +287,26 @@ header a {
 }
 
 
-
 .bottom-nav a:hover::after {
     opacity: 0.6;
 }
 
 .bottom-nav a:focus::after {
     opacity: 0.3;
+}
+
+.dropdown-link:active {
+    color: rgba(0,0,0, 0.3);
+}
+
+.dropdown-link::after:active {
+    color: rgba(0,0,0, 0.1);
+    opacity: 0.1;
+}
+
+.dropdown-link:hover,
+.dropdown-link:hover::after {
+    opacity: 0.6;
 }
 
 
@@ -340,6 +353,17 @@ header a {
     height: 7px;
     margin-top: 90px;
 }
+
+
+
+/* ------------------ slider
+
+ */
+.slider {
+    position: relative;
+    z-index: 100;
+}
+
 
 
 
