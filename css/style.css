@@ -242,7 +242,7 @@ header a {
 }
 
 .dropdown-menu a {
-    font-family: "Open Sans", "Verdana", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 15px;
     text-transform: none;
     letter-spacing: normal;
@@ -361,10 +361,98 @@ header a {
  */
 .slider {
     position: relative;
+    bottom: 137px;
     z-index: 100;
 }
 
+.slider-image {
+    float: left;
+    width: 500px;
+    margin-left: 60px;
+    position: relative;
+}
 
+.slide-description {
+    float: right;
+    width: 500px;
+    margin-right: 60px;
+    position: relative;
+}
+
+.slider input[type=radio]{
+    position: absolute;
+    opacity: 0;
+}
+
+.slider-controls {
+    position: absolute;
+    right: 50px;
+    top: 200px;
+    z-index: 2000;
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 3px;
+    background: white;
+    border: 3px solid rgba(0,0,0, .3);
+    vertical-align: top;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"]::after,
+#btn-2:checked ~ .slider-controls label[for="btn-2"]::after,
+#btn-3:checked ~ .slider-controls label[for="btn-3"]::after {
+    position: relative;
+    bottom: 3px;
+    right: 26px;
+    display: block;
+    content: "";
+    width: 4px;
+    height: 4px;
+    margin-left: 23px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.slide {
+    display: none;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+    display: block;
+}
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+    display: block;
+}
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+    display: block;
+}
+
+.slide b {
+    position: relative;
+    left: 257px;
+    font-family: "Gilroy", "Verdana", sans-serif;
+    font-size: 180px;
+    font-weight: 900;
+    color: white;
+}
+
+.slide h2 {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    font-family: "Gilroy", "Verdana", sans-serif;
+    font-size: 47px;
+    font-weight: 900;
+}
 
 
 
