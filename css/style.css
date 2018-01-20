@@ -68,8 +68,8 @@ body {
     top: -10px;
 }
 
-.button:focus {
-    color: rgba(0,0,0,.3);
+.button:active {
+    color: rgba(0,0,0, .3);
 }
 
 /* --------------------- header ------------------- */
@@ -330,11 +330,6 @@ header a {
     color: rgba(0,0,0, 0.3);
 }
 
-.dropdown-link::after:active {
-    color: rgba(0,0,0, 0.1);
-    opacity: 0.1;
-}
-
 .dropdown-link:hover,
 .dropdown-link:hover::after {
     opacity: 0.6;
@@ -552,6 +547,13 @@ header a {
     height: 334px;
     background-image: url("../img/slider-3.png");
     background-repeat: no-repeat;
+}
+
+/* -------------goods-categories
+ */
+.goods-categories-item {
+    float: left;
+    width: 160px;
 }
 
 
