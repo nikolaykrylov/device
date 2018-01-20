@@ -549,12 +549,124 @@ header a {
     background-repeat: no-repeat;
 }
 
+
+
+
+
 /* -------------goods-categories
  */
+
 .goods-categories-item {
     float: left;
     width: 160px;
+    margin-right: 40px;
 }
+
+.goods-categories-item:last-child {
+    margin-right: 0;
+}
+
+.item-img {
+    display: block;
+    width: 160px;
+    height: 160px;
+    background-color: #f7e296;
+    background-position: 50% 50%;
+    cursor: pointer;
+}
+
+.item-img::before {
+    position: absolute;
+    content: "";
+    width: 160px;
+    height: 160px;
+    background-repeat: no-repeat;
+}
+
+.goods-categories-item:nth-child(1) .item-img::before {
+    background-image: url("../img/spritesheet-2.png");
+    background-position: -217px 12px;
+}
+
+.goods-categories-item:nth-child(2) .item-img::before {
+    background-image: url("../img/spritesheet-2.png");
+    background-position: -390px 3px;
+}
+
+.goods-categories-item:nth-child(3) .item-img::before {
+    background-image: url("../img/spritesheet-2.png");
+    background-position: -544px -3px;
+}
+
+.goods-categories-item:nth-child(4) .item-img::before {
+    background-image: url("../img/spritesheet-2.png");
+    background-position: -719px 9px;
+}
+
+.goods-categories-item:nth-child(5) .item-img::before {
+    background-image: url("../img/spritesheet-2.png");
+    background-position: -879px -9px;
+}
+
+.goods-categories-item:nth-child(6) .item-img::before {
+    background-image: url("../img/spritesheet-2.png");
+    background-position: -27px 8px;
+}
+
+
+
+/*.goods-categories-item:nth-child(1) .item-img {*/
+    /*background-image: url("../img/popular-1.png");*/
+    /*background-repeat: no-repeat;*/
+/*}*/
+
+/*.goods-categories-item:nth-child(2) .item-img {*/
+    /*background-image: url("../img/popular-2.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 50% 99%;*/
+/*}*/
+
+/*.goods-categories-item:nth-child(3) .item-img {*/
+    /*background-image: url("../img/popular-3.png");*/
+    /*background-repeat: no-repeat;*/
+/*}*/
+
+/*.goods-categories-item:nth-child(4) .item-img {*/
+    /*background-image: url("../img/popular-4.png");*/
+    /*background-repeat: no-repeat;*/
+/*}*/
+
+/*.goods-categories-item:nth-child(5) .item-img {*/
+    /*background-image: url("../img/popular-5.png");*/
+    /*background-repeat: no-repeat;*/
+/*}*/
+
+/*.goods-categories-item:nth-child(6) .item-img {*/
+    /*background-image: url("../img/poppular-6.png");*/
+    /*background-repeat: no-repeat;*/
+/*}*/
+
+.goods-categories p {
+    font-family: "Gilroy", "Verdana", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    margin-top: 31px;
+}
+
+/* ------------------- hover and focus
+                       states
+
+ */
+
+.item-img:hover {
+    background-color: #f0c52e;
+}
+
+.item-img:active::before {
+    opacity: 0.3;
+}
+
+
 
 
 /* --------------------- catalog.html ------------------- */
