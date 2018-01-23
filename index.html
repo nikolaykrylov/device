@@ -9,7 +9,7 @@
 <body>
 <header>
     <div class="container">
-        <a class="device-logo-header">Device</a>
+        <a class="device-logo">Device</a>
         <div class="header-orange-background clearfix">
             <div class="top-nav clearfix">
                 <nav class="nav-left">
@@ -69,7 +69,7 @@
                     </div>
                     <div class="slide-description">
                         <b class="slide-number">01</b>
-                        <h2>Делай селфи, <br>
+                        <h2 class="header-text">Делай селфи, <br>
                             как Бен Стиллер!</h2>
                         <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
                             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -173,33 +173,52 @@
             </div>
         </section>
     </div>
-    <section class="delivery">
+    <section class="bottom-slider clearfix">
         <div class="container">
-            <div class="delivery-left-column">
-                <a>Доставка</a>
-                <a class="button">Гарантия</a>
-                <a class="button">Кредит</a>
+            <input type="radio" name="toggle-2" id="delivery" checked>
+            <input type="radio" name="toggle-2" id="guarantee">
+            <input type="radio" name="toggle-2" id="credit">
+            <div class="bottom-slider-controls">
+                <label for="delivery">Доставка</label>
+                <label for="guarantee">Гарантия</label>
+                <label for="credit">Кредит</label>
             </div>
-            <div class="delivery-right-column">
-                <h2>Доставка</h2>
-                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-                    заработаем, поднимая его на ваш этаж.</p>
-                <img width="" height="" src="#">
+            <div class="bottom-slides">
+                <div class="bottom-slide">
+                    <h2 class="header-text">Доставка</h2>
+                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
+                        неплохо
+                        заработаем, поднимая его на ваш этаж.</p>
+                    <div class="bottom-slide-image delivery"></div>
+                </div>
+                <div class="bottom-slide">
+                    <h2>Гарантия</h2>
+                    <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
+                        новый.
+                        Товар, не дом, конечно же.</p>
+                    <div class="bottom-slide-image guarantee"></div>
+                </div>
+                <div class="bottom-slide">
+                    <h2>Кредит</h2>
+                    <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+                        условия кредита. Выгодные для нашего банка, разумеется.</p>
+                    <div class="bottom-slide-image credit"></div>
+                </div>
             </div>
         </div>
     </section>
     <section class="brands">
-        <div class="container">
-            <div class="brand-item"><img src="#" width="" height=""></div>
-            <div class="brand-item"><img src="#" width="" height=""></div>
-            <div class="brand-item"><img src="#" width="" height=""></div>
-            <div class="brand-item"><img src="#" width="" height=""></div>
+        <div class="container clearfix">
+            <a class="brand-item"></a>
+            <a class="brand-item"></a>
+            <a class="brand-item"></a>
+            <a class="brand-item"></a>
         </div>
     </section>
     <section class="about-and-contacts">
-        <div class="container">
+        <div class="container clearfix">
             <div class="about">
-                <h2>О нас</h2>
+                <h2 class="header-text">О нас</h2>
                 <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
                 <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими
                     транспортными компаниями</p>
@@ -211,13 +230,13 @@
                 <a class="button">Подробнее о нас</a>
             </div>
             <div class="contacts">
-                <h2>Контакты</h2>
+                <h2 class="header-text">Контакты</h2>
                 <p>
                     Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность
                     покупки.
                     Всякое бывает.
                 </p>
-                <img width="" height="" src="#">
+                <img width="560" height="222" src="img/map.png">
                 <a class="button">Напишите нам</a>
             </div>
         </div>
@@ -226,7 +245,7 @@
 <footer>
     <div class="container">
         <div class="footer-left">
-            <a class="device-logo-footer">Device</a>
+            <a class="device-logo">Device</a>
             <p>г. Москва, ул. Строителей, 15</p>
         </div>
         <div class="footer-center">

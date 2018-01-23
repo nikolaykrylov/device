@@ -1,4 +1,5 @@
-/* --------------------- general ------------------- */
+/*!* --------------------- general ------------------- *!*/
+
 
 @font-face {
     font-family: "Gilroy";
@@ -72,6 +73,16 @@ body {
     color: rgba(0,0,0, .3);
 }
 
+.header-text {
+    font-family: "Gilroy", "Verdana", sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+p {
+    line-height: 2em;
+}
+
 /* --------------------- header ------------------- */
 header a {
     color: black;
@@ -87,7 +98,7 @@ header a {
     margin-top: -16px;
 }
 
-.device-logo-header {
+.device-logo {
     font-family: "Gilroy", "Verdana", sans-serif;
     font-size: 48px;
     font-weight: 800;
@@ -370,6 +381,69 @@ header a {
     color: rgba(255,255,255, 0.3);
 }
 
+/* ---------------------- footer
+
+ */
+
+
+footer {
+    position: relative;
+    margin-top: 90px;
+    background-color: #464646;
+    height: 320px;
+    color: white;
+}
+
+footer .device-logo {
+    position: relative;
+    color: #f7e184;
+    top: 58px;
+    left: 0;
+}
+
+.footer-left {
+    float: left;
+    width: 220px;
+}
+
+.footer-left p {
+    position: relative;
+    top: 63px;
+}
+
+.footer-left p::after {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 7px;
+    background-color: #f7e184;
+    left: 0;
+    top: 107px;
+}
+
+.footer-center {
+    float: left;
+    width: 500px;
+}
+
+.footer-right {
+    float: right;
+    width: 340px;
+}
+
+.footer-center a {
+    position: relative;
+    top: 141px;
+    left: 149px;
+    margin-right: 34px;
+    font-family: "Gilroy", Verdana, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
 
 
 /* --------------------- index.html ------------------- */
@@ -613,44 +687,12 @@ header a {
     background-position: -27px 8px;
 }
 
-
-
-/*.goods-categories-item:nth-child(1) .item-img {*/
-    /*background-image: url("../img/popular-1.png");*/
-    /*background-repeat: no-repeat;*/
-/*}*/
-
-/*.goods-categories-item:nth-child(2) .item-img {*/
-    /*background-image: url("../img/popular-2.png");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: 50% 99%;*/
-/*}*/
-
-/*.goods-categories-item:nth-child(3) .item-img {*/
-    /*background-image: url("../img/popular-3.png");*/
-    /*background-repeat: no-repeat;*/
-/*}*/
-
-/*.goods-categories-item:nth-child(4) .item-img {*/
-    /*background-image: url("../img/popular-4.png");*/
-    /*background-repeat: no-repeat;*/
-/*}*/
-
-/*.goods-categories-item:nth-child(5) .item-img {*/
-    /*background-image: url("../img/popular-5.png");*/
-    /*background-repeat: no-repeat;*/
-/*}*/
-
-/*.goods-categories-item:nth-child(6) .item-img {*/
-    /*background-image: url("../img/poppular-6.png");*/
-    /*background-repeat: no-repeat;*/
-/*}*/
-
 .goods-categories p {
     font-family: "Gilroy", "Verdana", sans-serif;
     font-weight: 900;
     font-size: 18px;
     margin-top: 31px;
+    line-height: 1em;
 }
 
 /* ------------------- hover and focus
@@ -665,6 +707,295 @@ header a {
 .item-img:active::before {
     opacity: 0.3;
 }
+
+
+/* ------------------- bottom-slider
+*/
+
+.bottom-slider {
+    background-color: #e5e5e5;
+    margin-bottom: 91px;
+    margin-top: 173px;
+    position: relative;
+    height: 290px;
+}
+
+
+.bottom-slider input[type=radio] {
+    position: absolute;
+    opacity: 0;
+}
+
+.bottom-slider-controls {
+    float: left;
+    position: relative;
+    width: 283px;
+    height: 229px;
+    top: -101px;
+    left: -8px;
+    padding-top: 90px;
+    border-right: 7px solid black;
+    z-index: 5;
+}
+
+.bottom-slider-controls label {
+    position: relative;
+    display: block;
+    margin-bottom: 50px;
+    padding: 0 40px;
+    font-family: "Gilroy", "Verdana", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+}
+
+.bottom-slider-controls label::after {
+    position: absolute;
+    top: 7px;
+    left: 16px;
+    content: "";
+    width: 160px;
+    height: 8px;
+    background-color: #f0c52e;
+    z-index: -1;
+}
+
+.bottom-slider-controls label:hover::after {
+    height: 40px;
+    top: -9px;
+}
+
+
+#delivery:checked ~ .bottom-slider-controls label[for="delivery"]::after,
+#guarantee:checked ~ .bottom-slider-controls label[for="guarantee"]::after,
+#credit:checked ~ .bottom-slider-controls label[for="credit"]::after {
+    position: absolute;
+    top: -9px;
+    color: #f7e184;
+    background-color: black;
+    width:275px;
+    height: 40px;
+    z-index: -2;
+}
+
+#delivery:checked ~ .bottom-slider-controls label[for="delivery"],
+#guarantee:checked ~ .bottom-slider-controls label[for="guarantee"],
+#credit:checked ~ .bottom-slider-controls label[for="credit"] {
+    color: #f0c52e;
+}
+
+.bottom-slide {
+    display: none;
+    float: right;
+    width: 700px;
+    max-height: 300px;
+}
+
+#delivery:checked ~ .bottom-slides .bottom-slide:nth-child(1),
+#guarantee:checked ~ .bottom-slides .bottom-slide:nth-child(2),
+#credit:checked ~ .bottom-slides .bottom-slide:nth-child(3) {
+    display: block;
+}
+
+.bottom-slide-image {
+    position: relative;
+    bottom: 275px;
+    right: 60px;
+    float: right;
+    width: 200px;
+    height: 225px;
+}
+
+.delivery {
+    background-image: url("../img/spritesheet-3.png");
+    background-repeat: no-repeat;
+    background-position: -218px -18px;
+}
+
+.guarantee {
+    background-image: url("../img/spritesheet-3.png");
+    background-repeat: no-repeat;
+    background-position: -480px -18px;
+    bottom: 302px;
+    left: 5px;
+    right: 49px;
+}
+
+.credit {
+    background-image: url("../img/spritesheet-3.png");
+    background-repeat: no-repeat;
+    background-position: -10px -18px;
+    bottom: 302px;
+}
+
+.bottom-slide p {
+    position: relative;
+    right: 60px;
+    bottom: 84px;
+    width: 460px;
+    line-height: 2em;
+}
+
+.bottom-slide h2 {
+    position: relative;
+    right: 60px;
+    bottom: 71px;
+    font-family: "Gilroy", "Verdana", sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+label[for=delivery] {
+    left: -8px;
+}
+
+label[for=guarantee] {
+    left: -5px;
+    top: -6px;
+}
+
+label[for=credit] {
+    left: 9px;
+    top: -11px;
+}
+
+label[for=guarantee]::after {
+    left: 13px;
+}
+
+label[for=credit]::after {
+    left: 0;
+}
+
+/* ------------------- brands section
+
+ */
+
+.brand-item {
+    float: left;
+    width: 260px;
+    height: 90px;
+    margin-right: 39px;
+    background-image: url("../img/spritesheet-4.png");
+    cursor: pointer;
+}
+
+.brand-item:nth-child(1) {
+    background-position: -40px -40px;
+}
+
+.brand-item:nth-child(2) {
+    background-position: -380px -40px;
+}
+
+.brand-item:nth-child(3) {
+    background-position: -720px -40px;
+}
+
+.brand-item:nth-child(4) {
+    background-position: -1060px -40px;
+    margin-right: 0;
+}
+
+.brand-item:hover {
+    background-image: url("../img/spritesheet-5.png");
+}
+
+
+
+
+/* ----------------- about-and-contacts
+                     section
+ */
+
+.about-and-contacts {
+    position: relative;
+    margin-top: 112px;
+}
+
+.about {
+    float: left;
+    width: 490px;
+}
+
+.contacts {
+    float: right;
+    width: 560px;
+}
+
+.about-and-contacts h2::before {
+    position: absolute;
+    content: "";
+    top: -9px;
+    width: 80px;
+    height: 7px;
+    background-color: black;
+}
+
+.about p:nth-of-type(1) {
+    margin-bottom: 29px;
+}
+
+.about-and-contacts .button {
+    position: relative;
+}
+
+.about ul {
+    position: relative;
+    padding: 0;
+    padding-left: 30px;
+    margin: 0;
+    margin-top: 77px;
+    margin-bottom: 74px;
+    list-style: none;
+    font-family: "Gilroy", "Verdana", sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.about li {
+    position: relative;
+    margin-bottom: 22px;
+}
+
+.about li::before {
+    position: absolute;
+    left: -30px;
+    top: 3px;
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: white;
+    border: 3px solid rgba(0,0,0, .3);
+    border-radius: 50%;
+}
+
+.about-and-contacts .button {
+    left: -19px;
+}
+
+.about-and-contacts .button::after {
+    width: 260px;
+    left: 18px;
+}
+
+.contacts .button {
+    left: -1px;
+}
+
+.contacts .button::after {
+    left: 1px;
+}
+
+.contacts img {
+    margin-bottom: 72px;
+    margin-top: 26px;
+}
+
+
+
 
 
 

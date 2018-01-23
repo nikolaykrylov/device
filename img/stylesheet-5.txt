@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-logo-1--copy {
+    width: 260px;
+    height: 100px;
+    background-position: -40px -40px;
+}
+
+.sprite-logo-2-copy {
+    width: 260px;
+    height: 100px;
+    background-position: -380px -40px;
+}
+
+.sprite-logo-3-copy {
+    width: 260px;
+    height: 100px;
+    background-position: -720px -40px;
+}
+
+.sprite-logo-4-copy {
+    width: 260px;
+    height: 100px;
+    background-position: -1060px -40px;
+}
