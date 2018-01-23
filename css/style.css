@@ -109,6 +109,14 @@ header a {
     z-index: 10;
 }
 
+.device-logo:hover {
+    color: #464646;
+}
+
+.device-logo:active {
+    color: #666666;
+}
+
 .nav-left {
     float: left;
     width: 502px;
@@ -243,8 +251,8 @@ header a {
 .dropdown-menu {
     position: absolute;
     top: 145px;
-    left: 15px;
-    width: 1120px;
+    left: 0;
+    width: 1160px;
     height: 154px;
     display: none;
 
@@ -267,8 +275,10 @@ header a {
     content: '';
     width: 26px;
     height: 26px;
-    background-image: url("../img/spritesheet.png");
-    background-position: -20px -231px;
+    background-image: url("../img/plus.png");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    /*background-position: -20px -231px;*/
     cursor: pointer
 }
 
@@ -276,11 +286,25 @@ header a {
     display: block;
 }
 
-.dropdown-menu li {
+.dropdown-menu ul {
     margin: 0;
     padding: 0;
+    margin-right: 21px;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 189px;
+    float: left;
+}
+
+
+.dropdown-menu li {
+    margin-bottom: 20px;
     list-style: none;
     display: inline-block;
+}
+
+.dropdown-menu ul:last-of-type {
+    margin-left: -14px;
 }
 
 .dropdown-menu a {
@@ -337,13 +361,16 @@ header a {
     opacity: 0.3;
 }
 
-.dropdown-link:active {
-    color: rgba(0,0,0, 0.3);
+.dropdown-link:hover {
+    opacity: 0.6;
 }
 
-.dropdown-link:hover,
-.dropdown-link:hover::after {
-    opacity: 0.6;
+.dropdown-link:active {
+    opacity: 0.3;
+}
+
+.dropdown-link:active::after {
+    opacity: 0.2;
 }
 
 
@@ -399,6 +426,15 @@ footer .device-logo {
     color: #f7e184;
     top: 58px;
     left: 0;
+    text-decoration: none;
+}
+
+footer .device-logo:hover {
+    color: #f0c52e;
+}
+
+footer .device-logo:focus {
+    color: rgba(240, 197, 46, 0.3);
 }
 
 .footer-left {
@@ -428,7 +464,7 @@ footer .device-logo {
 
 .footer-right {
     float: right;
-    width: 340px;
+    width: 371px;
 }
 
 .footer-center a {
@@ -444,6 +480,120 @@ footer .device-logo {
     cursor: pointer;
 }
 
+.footer-center a:hover {
+    opacity: 0.6;
+}
+
+.footer-center a:active {
+    opacity: 0.3;
+}
+
+.footer-soc-buttons {
+    position: relative;
+    top: 63px;
+    left: 138px;
+}
+
+.footer-soc-buttons a {
+    display: inline-block;
+    margin-right: 1px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/spritesheet-6.png");
+    opacity: 0.3;
+}
+
+.footer-soc-buttons a:hover {
+    opacity: 1;
+}
+
+.footer-soc-buttons a:focus {
+    opacity: 0.1;
+}
+
+.footer-soc-buttons a:nth-of-type(1) {
+    background-position: -122px -20px;
+}
+
+.footer-soc-buttons a:nth-of-type(2) {
+    background-position: -335px -20px;
+}
+
+.footer-soc-buttons a:nth-of-type(3) {
+    background-position: -414px -20px;
+}
+
+.footer-right a {
+    margin-right: 58px;
+    position: relative;
+    left: 74px;
+    top: 72px;
+    opacity: 0.7;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-right a:hover {
+    opacity: 1;
+}
+
+.footer-right a:focus {
+    opacity: 0.3;
+}
+
+.footer-right a:nth-of-type(1)::before {
+    position: absolute;
+    top: 5px;
+    left: -27px;
+    content: '';
+    width: 26px;
+    height: 26px;
+    background-image: url("../img/spritesheet-6.png");
+    background-position: -492px -20px;
+}
+
+.footer-right a:nth-of-type(2)::before {
+    position: absolute;
+    top: 7px;
+    left: -20px;
+    content: '';
+    width: 26px;
+    height: 26px;
+    background-image: url("../img/spritesheet-6.png");
+    background-position: -72px -20px;
+}
+
+.footer-right a:nth-of-type(3)::before {
+    position: absolute;
+    top: 5px;
+    left: -22px;
+    content: '';
+    width: 26px;
+    height: 26px;
+    background-image: url("../img/spritesheet-6.png");
+    background-position: -20px -20px;
+}
+
+.footer-right a:nth-of-type(3) {
+    margin-right: 0;
+}
+
+.footer-right p {
+    position: relative;
+    top: 100px;
+    left: 213px;
+}
+
+.footer-right .footer-logo {
+    display: block;
+    position: relative;
+    top: 148px;
+    left: 346px;
+    width: 30px;
+    height: 40px;
+    background-image: url("../img/spritesheet-6.png");
+    background-position: -201px -20px;
+}
 
 
 /* --------------------- index.html ------------------- */
@@ -463,6 +613,7 @@ footer .device-logo {
     position: relative;
     bottom: 137px;
     z-index: 100;
+    height: 486px;
 }
 
 .slide-image {
@@ -1001,3 +1152,56 @@ label[for=credit]::after {
 
 
 /* --------------------- catalog.html ------------------- */
+
+.catalog-page .header-orange-background {
+    padding-bottom: 51px;
+}
+
+.breadcrumbs {
+    margin-bottom: 30px;
+    margin-left: 57px;
+}
+
+.breadcrumbs a {
+    position: relative;
+    margin-right: 43px;
+    left: 2px;
+    bottom: 7px;
+    /*opacity: 0.3;*/
+    color: rgba(0,0,0, .3);
+    cursor: pointer;
+}
+
+.breadcrumbs a::after {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 77px;
+    height: 7px;
+    width: 4px;
+    background-image: url("../img/spritesheet.png");
+    background-position: -20px -184px;
+    /*opacity: 1;*/
+    color: rgba(0,0,0, 1);
+    cursor: default;
+}
+
+.breadcrumbs a:hover {
+    /*opacity: 0.6;*/
+    color: rgba(0,0,0, .6);
+
+}
+
+.breadcrumbs a:active {
+    /*opacity: 0.1;*/
+    color: rgba(0,0,0, .1);
+
+}
+
+.breadcrumbs a:nth-of-type(2)::after {
+    left: 140px;
+}
+
+.breadcrumbs a:nth-of-type(3)::after {
+    display: none;
+}
