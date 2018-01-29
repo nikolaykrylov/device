@@ -1167,7 +1167,6 @@ label[for=credit]::after {
     margin-right: 43px;
     left: 2px;
     bottom: 7px;
-    /*opacity: 0.3;*/
     color: rgba(0,0,0, .3);
     cursor: pointer;
 }
@@ -1181,19 +1180,16 @@ label[for=credit]::after {
     width: 4px;
     background-image: url("../img/spritesheet.png");
     background-position: -20px -184px;
-    /*opacity: 1;*/
     color: rgba(0,0,0, 1);
     cursor: default;
 }
 
 .breadcrumbs a:hover {
-    /*opacity: 0.6;*/
     color: rgba(0,0,0, .6);
 
 }
 
 .breadcrumbs a:active {
-    /*opacity: 0.1;*/
     color: rgba(0,0,0, .1);
 
 }
@@ -1204,4 +1200,87 @@ label[for=credit]::after {
 
 .breadcrumbs a:nth-of-type(3)::after {
     display: none;
+}
+
+
+/* -------------------- catalog content
+
+ */
+
+.catalog-header-background {
+    min-width: 1200px;
+    /*max-width: 1600px;*/
+    background: linear-gradient(to right, #dbdbdb 30%, #ebebeb 30%);
+    height: 70px;
+}
+
+.catalog-content-background {
+    min-width: 1200px;
+    /*max-width: 1600px;*/
+    background: linear-gradient(to right, #ebebeb 30%, white 30%);
+}
+
+.catalog-header-left {
+    float: left;
+    width: 30%;
+    padding: 25px 0;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+
+.catalog-header-right {
+    float: left;
+    width: 70%;
+    padding: 25px 0;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+
+.catalog-content-left {
+    float:left;
+    width: 30%;
+    box-sizing: border-box;
+    padding-right: 60px;
+}
+
+.catalog-content-right {
+    float: right;
+    width: 70%;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+
+
+.catalog-content-item {
+    float: left;
+}
+
+.catalog-header-background h2 {
+    font-family: "Gilroy", Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    display: inline;
+}
+
+.catalog-pagination {
+    float: left;
+    width: 760px;
+    background-color: #ebebeb;
+}
+
+.catalog-form {
+    width: 200px;
+    padding: 70px 60px 0 60px;
+    box-sizing: border-box;
+    margin-right: 60px;
+}
+
+.catalog-form b::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 200px;
+    background-color: black;
 }

@@ -54,44 +54,82 @@
     </div>
 </header>
 <main>
-    <div class="container">
+    <div class="container clearfix">
         <nav class="breadcrumbs">
             <h1 class="header-text">Моноподы для селфи</h1>
             <a>Главная</a><a>Каталог товаров</a><a>Моноподы для селфи</a>
         </nav>
-        <aside>
-            <b>Фильтр:</b>
-            <form></form>
-        </aside>
-        <div class="catalog-content">
-            <b>Сортировка:</b>
-            <a>По цене</a>
-            <a>По типу</a>
-            <a>По популярности</a>
-            <a class="arrow-up"></a>
-            <a class="arrow-down"></a>
-            <div class="catalog-content-image">
-                <img src="#" width="" height="">
-                <span>Любительская селфи-палка</span><span>500 руб.</span>
+    </div>
+    <div class="catalog-header-background">
+        <div class="container clearfix">
+            <div class="catalog-header-left">
+                <h2>Фильтр:</h2>
             </div>
-            <div class="catalog-content-image">
-                <img src="#" width="" height="">
-                <span>Профессиональная<br> селфи-палка</span><span>1500 руб.</span>
+            <div class="catalog-header-right">
+                <h2>Сортировка:</h2>
+                <a>По цене</a>
+                <a>По типу</a>
+                <a>По популярности</a>
+                <a class="arrow-up"></a>
+                <a class="arrow-down"></a>
             </div>
-            <div class="catalog-content-image">
-                <img src="#" width="" height="">
-                <span>Непотопляемая селфи-палка</span><span>2500 руб.</span>
+        </div>
+    </div>
+    <div class="catalog-content-background">
+        <div class="container clearfix">
+            <div class="catalog-content-left">
+                <form class="catalog-form">
+                    <b>Стоимость</b>
+                    <div class="range-toggle">
+                        <div class="toggle-button"></div>
+                        <div class="toggle-button"></div>
+                    </div>
+                    <div class="monopod-color">
+                        <b>Цвет</b>
+                        <input type="checkbox" name="color" id="black" checked>
+                        <label for="black">Черный</label>
+                        <input type="checkbox" name="color" id="white">
+                        <label for="white">Белый</label>
+                        <input type="checkbox" name="color" id="blue" checked>
+                        <label for="blue">Синий</label>
+                        <input type="checkbox" name="color" id="red" checked>
+                        <label for="red">Красный</label>
+                        <input type="checkbox" name="color" id="pink">
+                        <label for="pink">Розовый</label>
+                    </div>
+                    <div class="bluetooth">
+                        <b>Bluetooth</b>
+                        <input type="radio" name="bluetooth" id="bluetooth-yes" checked>
+                        <label for="bluetooth-yes">Есть</label>
+                        <input type="radio" name="bluetooth" id="bluetooth-no">
+                        <label for="bluetooth-no">Нет</label>
+                    </div>
+                </form>
             </div>
-            <div class="catalog-content-image">
-                <img src="#" width="" height="">
-                <span>Селфи-палка "Следуй за<br> мной"</span><span>4900 руб.</span>
-            </div>
-            <div class="catalog-pagination">
-                <a>Назад</a>
-                <a>1</a>
-                <a>2</a>
-                <a>3</a>
-                <a>Вперед</a>
+            <div class="catalog-content-right clearfix">
+                <div class="catalog-content-item">
+                    <img src="#" width="360" height="380">
+                    <h3>Любительская селфи-палка</h3><span>500 руб.</span>
+                </div>
+                <div class="catalog-content-item">
+                    <img src="#" width="360" height="380">
+                    <h3>Профессиональная<br> селфи-палка</h3><span>1500 руб.</span>
+                </div>
+                <div class="catalog-content-item">
+                    <img src="#" width="360" height="380">
+                    <h3>Непотопляемая селфи-палка</h3><span>2500 руб.</span>
+                </div>
+                <div class="catalog-content-item">
+                    <img src="#" width="360" height="380">
+                    <h3>Селфи-палка "Следуй за<br> мной"</h3><span>4900 руб.</span>
+                </div>
+                <div class="catalog-pagination">
+                    <a>Назад</a>
+                    <a>1</a>
+                    <a>2</a>
+                    <a>3</a>
+                    <a>Вперед</a>
+                </div>
             </div>
         </div>
     </div>
